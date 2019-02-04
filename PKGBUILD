@@ -1,16 +1,14 @@
-# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
+# Maintainer: Ali Hassan alix35301@gmail.com
 
-pkgname=adobe-source-code-pro-fonts
-pkgver=2.030ro+1.050it
-_relver=2.030R-ro/1.050R-it
-pkgrel=4
-pkgdesc="Monospaced font family for user interface and coding environments"
-url="https://adobe-fonts.github.io/source-code-pro/"
+pkgname=dhivehi_fonts
+pkgver=1.0
+pkgrel=1
+pkgdesc="Dhivehi fonts for arch ttf, otf"
+url="https://adobe-fonts.github.io/source-code-pro"
 arch=(any)
-license=(custom)
-_tarname=source-code-pro-${_relver//\//-}
+license=(common)
+_tarname=dhivehi_fonts
 source=("$_tarname.tar.gz::https://github.com/adobe-fonts/source-code-pro/archive/$_relver.tar.gz")
-sha256sums=('a4e4dd59b8e0a436b934f0f612c2e91b5932910c6d1c3b7d1a5a9f389c86302b')
 
 package() {
   cd $_tarname
